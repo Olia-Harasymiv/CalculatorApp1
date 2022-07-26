@@ -4,7 +4,9 @@ public class Calculator {
     public static void main(String[] args) {
 
         char maths;
-        Double number1, number2, result;
+        double number1;
+        double number2;
+        double result;
 
         Scanner number = new Scanner(System.in);
 
