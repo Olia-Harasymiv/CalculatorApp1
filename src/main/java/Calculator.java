@@ -14,8 +14,15 @@ public class Calculator implements Calculating {
         return a * b;
     }
 
-    public double divide(double a, double b) {
-        return a / b;
+    public int divide(int a, int b) {
+        try {
+            return a / b;
+        } catch (ArithmeticException e) {
+            System.err.println("Cannot be divided by 0");
+        }
+        return 0;
     }
+    
 
 }
+
